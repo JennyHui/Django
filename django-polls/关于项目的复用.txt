@@ -1,0 +1,9 @@
+1.polls是我们的APP
+2.README.rst文件是告诉你怎么搭建django，让这个APP能在你的电脑上跑起来
+3.写个setup脚本，内涵关于你APP的细节
+4.新建MANIFEST.in文件，写入要导入的文件
+5.然后在这个目录中执行python setup.py sdist //生成dist目录，生成我们的APP包
+6.最后利用pip，安装我们的APP吧
+pip install --user django-polls/dist/django-polls-0.1.tar.gz
+7.现在返回那个没有APP文件的django目录下，会发现我们的APP跑起来啦
+python manage.py runserver
